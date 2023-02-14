@@ -9,7 +9,7 @@ export async function generateMetadata(props) {
 
 export default function Home() {
   return (
-    <main className="flex">
+    <main className="flex bg-white dark:bg-gray-800">
       <h1 className='text-teal-500'>I am the homepage!</h1>
     </main>
   )
