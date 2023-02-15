@@ -13,12 +13,11 @@ const search = async (searchTerm) => {
 // export const metadata = {
 //   title: 'Neymar',
 // };
-export async function generateMetadata(props) {
-  console.log(props);
+export async function generateMetadata({params: {searchTerm}}) {
   // For /products/123, params.id is "123"
   // For /products/123?foo=bar, searchParams.get("foo") is "bar"
   // The return value is the metadata object
-  return { title: "test", description: "Long text goes here." };
+  return { title: searchTerm, description: "Long text goes here." };
 }
 
 async function SearchResult({ params: { searchTerm } }) {
